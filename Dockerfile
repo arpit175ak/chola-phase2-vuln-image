@@ -23,7 +23,7 @@ RUN mkdir -p /app /secrets
 WORKDIR /app
 
 COPY requirements.txt /app/requirements.txt
-RUN pip3 install --no-cache-dir -r requirements.txt
+#RUN pip3 install --no-cache-dir -r requirements.txt
 
 COPY app.py /app/app.py
 COPY secrets.txt /secrets/secrets.txt
